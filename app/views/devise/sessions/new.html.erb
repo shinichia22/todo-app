@@ -1,7 +1,7 @@
 <h2>Log in</h2>
 <div class="row">
   <div class="col-md-6 col-lg-8">
-    <h4>User the following accounts to test the application</h4>
+    <!-- <h4>User the following accounts to test the application</h4>
     <table class="table table-sm">
       <thead>
         <tr>
@@ -13,13 +13,13 @@
         <% User.all.each do |user| %>
           <tr>
             <td><%= user.email %></td>
-            <td>password</td>
+            <td><%= user.password %></td>
           </tr>
         <% end %>
       </tbody>
     </table>
-  </div>
-  <div class="col-md-6 col-lg-4">
+  </div> -->
+  <div class="col-md-6">
     <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: "border shadow-sm rounded p-3 mb-3" } ) do |f| %>
       <div class="form-group">
         <%= f.label :email %>

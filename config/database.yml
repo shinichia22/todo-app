@@ -24,7 +24,7 @@ default: &default
 development:
   <<: *default
   database: todo_development
-  username: auzmor021
+  username: postgres
   password: auzmor123
 
   # The specified database role being used to connect to postgres.
@@ -55,7 +55,7 @@ development:
 test:
   <<: *default
   database: todo_test
-  username: auzmor021
+  username: postgres
   password: auzmor123
 
 # As with config/credentials.yml, you never want to store sensitive information,
